@@ -113,13 +113,13 @@
 </section>
 
     
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 card bg-success text-light">
+     <!-- Contact Section -->
+     <section id="contact" class="py-5 card bg-success text-light">
       <div class="container">
         <h2>Contact Me</h2>
         <div class="row">
           <div class="col-lg-6">
-            <form>
+            <form id="contactForm">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input
@@ -152,13 +152,33 @@
           </div>
           <div class="col-lg-6">
             <h3>Contact Information</h3>
-            <p>Email: fadlangaming42@gmail.com</p>
-            <p>Phone: +1 234 567 890</p>
-            <p>Address: Jakarta, Indonesia</p>
+            <p>Email: muhmmdfdln@gmail.com</p>
+            <p>Phone: +62 881-0121-77133</p>
+            <p>Address: Depok, Jawa Barat, Indonesia</p>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Get form values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        
+        // Check if fields are empty
+        if (name === '' || email === '' || message === '') {
+          alert('Isi form terlebih dahulu');
+        } else {
+          alert('Terima Kasih');
+          // Optionally, you can reset the form after submission
+          this.reset();
+        }
+      });
+    </script>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
