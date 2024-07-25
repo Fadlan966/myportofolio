@@ -60,9 +60,9 @@
             <h2>About Me</h2>
             <p>
               Hallo Perkenalkan nama saya Muhammad Fadlan saya tinggal di Depok,
-              hobi saya berenang dan bermain bola. Ini adalah portofolio saya jika ada
-              seseuatu yang ingin ditanyakan silahkan hubungi saya melalui email
-              yang sudah tertera dibawah
+              hobi saya berenang dan bermain bola. Ini adalah portofolio saya
+              jika ada seseuatu yang ingin ditanyakan silahkan hubungi saya
+              melalui email yang sudah tertera dibawah
             </p>
           </div>
           <div class="col-lg-6 bg-light text-success">
@@ -78,43 +78,56 @@
         </div>
       </div>
     </section>
-<!-- Projects Section -->
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="text-center py-4 text-success">My Projects</h2>
-    <br>
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <div class="card mb-4" style="border: none !important;">
-          <img src="img/Welcome page.jpg" class="card-img-top" alt="Welcome Page Project" />
-          <div class="card-body bg-success text-light">
-            <h5 class="card-title">Welcome Page</h5>
-            <p class="card-text">
-              Ini adalah projek kedua saya yaitu membuat welcome page. Silahkan klik jika ingin mencobanya.
-            </p>
-            <a href="Welcome Page/index.html" class="btn btn-light">Learn More</a>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center py-4 text-success">My Projects</h2>
+        <br />
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card mb-4" style="border: none !important">
+              <img
+                src="img/Welcome page.jpg"
+                class="card-img-top"
+                alt="Welcome Page Project"
+              />
+              <div class="card-body bg-success text-light">
+                <h5 class="card-title">Welcome Page</h5>
+                <p class="card-text">
+                  Ini adalah projek pertama saya yaitu membuat welcome page.
+                  Silahkan klik jika ingin mencobanya.
+                </p>
+                <a href="Welcome Page/index.html" class="btn btn-light"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4" style="border: none !important">
+              <img
+                src="img/Landing page.png"
+                class="card-img-top"
+                alt="Landing Page Project"
+              />
+              <div class="card-body bg-success text-light">
+                <h5 class="card-title">Landing Page</h5>
+                <p class="card-text">
+                  Ini adalah projek kedua saya yaitu membuat landing page.
+                  Silahkan klik jika ingin mencobanya.
+                </p>
+                <a href="landing page/index.html" class="btn btn-light"
+                  >Learn More</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-4" style="border: none !important;">
-          <img src="img/Landing page.png" class="card-img-top" alt="Landing Page Project" />
-          <div class="card-body bg-success text-light">
-            <h5 class="card-title">Landing Page</h5>
-            <p class="card-text">
-              Ini adalah projek ketiga saya yaitu membuat landing page. Silahkan klik jika ingin mencobanya.
-            </p>
-            <a href="landing page/index.html" class="btn btn-light">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-    
-     <!-- Contact Section -->
-     <section id="contact" class="py-5 card bg-success text-light">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 card bg-success text-light">
       <div class="container">
         <h2>Contact Me</h2>
         <div class="row">
@@ -161,23 +174,25 @@
     </section>
 
     <script>
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        // Get form values
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
-        
-        // Check if fields are empty
-        if (name === '' || email === '' || message === '') {
-          alert('Isi form terlebih dahulu');
-        } else {
-          alert('Terima Kasih');
-          // Optionally, you can reset the form after submission
-          this.reset();
-        }
-      });
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get form values
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+
+          // Check if fields are empty
+          if (name === "" || email === "" || message === "") {
+            alert("Isi form terlebih dahulu");
+          } else {
+            alert("Terima Kasih");
+            // Optionally, you can reset the form after submission
+            this.reset();
+          }
+        });
     </script>
 
     <!-- Footer -->
